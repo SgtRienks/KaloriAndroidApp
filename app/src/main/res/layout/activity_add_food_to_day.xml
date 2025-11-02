@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchFoodInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search food"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/gramsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Grams"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <Button
+        android:id="@+id/addFoodToDayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Day" />
+
+</LinearLayout>

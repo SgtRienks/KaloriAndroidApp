@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/openAddFoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        android:layout_marginTop="24dp"/>
+
+
+    <Button
+        android:id="@+id/openCalcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Calculator"
+        app:layout_constraintTop_toBottomOf="@id/openAddFoodButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/viewDailyLogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Daily Log" />
+
+    <Button
+        android:id="@+id/viewGraphButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Graph" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coming_soon"
+        android:textSize="20sp" />
+</LinearLayout>
+
+

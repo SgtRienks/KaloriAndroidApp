@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.gainscounterapp.ui.dailylog.DailyLogActivity">
+
+    <!-- Totals Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dayTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
+            android:text="Date: "
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/totalCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:text="Calories: 0 kcal"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:text="Protein: 0g"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/totalCarbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:text="Carbs: 0g"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/totalFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:text="Fat: 0g"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- List -->
+
+    <!-- Buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/dailyItemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/addFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food" />
+
+        <Button
+            android:id="@+id/addMealButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Add Meal" />
+
+        <Button
+            android:id="@+id/saveDayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Save Day" />
+
+    </LinearLayout>
+
+</LinearLayout>

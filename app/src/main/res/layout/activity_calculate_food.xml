@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.calculate.CalculateFood">
+
+    <AutoCompleteTextView
+        android:id="@+id/nameCalcInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Food name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/weightCalcInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="64dp"
+        android:hint="Weight (g)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameCalcInput" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/nameMeal"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Name of the Meal"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/nameMeal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_margin="16dp" />-->
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        app:layout_constraintTop_toBottomOf="@id/weightCalcInput"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/saveMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Meal"
+        app:layout_constraintTop_toBottomOf="@id/weightCalcInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Added foods:\n"
+        app:layout_constraintTop_toBottomOf="@id/addFoodButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Totals: 0 kcal, 0g protein, 0g carbs, 0g fat"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
